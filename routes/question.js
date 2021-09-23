@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { questionDB } = require('../config/database/database.js');
+const { questionDB, resultDB } = require('../config/database/database.js');
 
 const questionTable = {
     "0" : {"1" : "99", "2" : "1"},
@@ -16,12 +16,12 @@ const questionTable = {
     "13" : {"1" : "18", "2" : "18"},
     "14" : {"1" : "19", "2" : "20"},
     "15" : {"1" : "21", "2" : "21"},
-    "16" : {"1" : "FE", "2" : "BE"},
-    "17" : {"1" : "FE", "2" : "BE"},
+    "16" : {"1" : "Front-End", "2" : "Back-End"},
+    "17" : {"1" : "Front-End", "2" : "Back-End"},
     "18" : {"1" : "iOS", "2" : "Android"},
     "19" : {"1" : "AI", "2" : "빅데이터"},
     "20" : {"1" : "빅데이터", "2" : "AI"},
-    "21" : {"1" : "IOT", "2" : "임베디드"},
+    "21" : {"1" : "IoT", "2" : "임베디드"},
     "22" : {"1" : "25", "2" : "게임"},
     "25" : {"1" : "26", "2" : "네이버 커넥트"},
     "26" : {"1" : "크롱", "2" : "호눅스"},
@@ -37,7 +37,7 @@ router.get('/', function(req, res, next) {
         const resNum = questionTable[question][pick];
 
         if(checkResNum(resNum) === "result") { // resNum이 결과인 경우 결과만 반환
-            res.json(resNum);
+            resultDB.find({name: resNum}, (err, docs) => res.json(docs));
         }
         else {
             questionDB.find({num: resNum}, (err, docs) => res.json(docs));
@@ -50,14 +50,14 @@ router.get('/', function(req, res, next) {
 
 const checkResNum = (num) => {
     switch (num) {
-        case "FE":
-        case "BE":
+        case "Front-End":
+        case "Back-End":
         case "iOS":
         case "Android":
         case "게임":
         case "빅데이터":
         case "AI":
-        case "IOT":
+        case "IoT":
         case "임베디드":
         case "네이버 커넥트":
         case "크롱":

@@ -5,4 +5,9 @@ const questionDB = new database({
     autoload: true
 });
 
-module.exports = { questionDB };
+const resultDB = new database({
+    filename: './config/database/databaseFile/resultDB.db',
+    autoload: true
+});
+
+module.exports = { questionDB, resultDB };
