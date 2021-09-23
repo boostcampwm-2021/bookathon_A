@@ -9,11 +9,6 @@ const $answers = document.querySelectorAll(".answer");
 export const initQuestion = async ({ num, answer1, answer2 }) => {
 	setStore({ currentPage: num });
 	render({ num, answer1, answer2 });
-
-	// test
-	const result = await fetchQuestion(2, 1);
-	console.log(result);
-	// test
 };
 
 const fetchQuestion = async (questionNumber, pick) => {
