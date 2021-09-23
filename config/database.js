@@ -26,3 +26,5 @@ const questionDB = new database({
 // }
 
 // module.exports = { contentDB, paymentDB, insert, select, paymentDelete, update };
+
+// test
