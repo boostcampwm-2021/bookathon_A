@@ -42,11 +42,11 @@
 
 ## 2. 디자인
 - 입장 페이지
-https://www.asciiart.eu/computers/computers
-- 질문
+https://www.asciiart.eu/computers/computers   
+- 질문   
 ![](https://i.imgur.com/0tm5FOe.png)    
 - font
-https://futurecreator.github.io/2018/11/12/my-best-programming-font-top-3/
+https://futurecreator.github.io/2018/11/12/my-best-programming-font-top-3/   
 
 # 사용 기술
 - SPA
