@@ -20,6 +20,6 @@ const template = ({ num, answer1, answer2 }) => `
     </div>
 `;
 
-export const render = ({ question, answer1, answer2 }) => {
-	target().innerHTML = template({ question, answer1, answer2 });
+export const render = ({ num, answer1, answer2 }) => {
+	target().innerHTML = template({ num, answer1, answer2 });
 };
