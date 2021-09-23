@@ -20,7 +20,7 @@
 
 	width: 70vw;
 	height: 70vh;
-	max-width: 800px;
+	max-width: 850px;
 
 	box-shadow: 1px 4px 4px rgba(20, 20, 20, 0.5);
 	border-radius: 15px;
@@ -78,6 +78,12 @@
 			justify-content: space-around;
 		}
 	}
+}
+
+.question-title {
+	@include font(26px);
+	width: 68%;
+	padding-top: 30px;
 }
 
 .answer {

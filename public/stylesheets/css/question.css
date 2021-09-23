@@ -27,7 +27,7 @@ body {
   position: relative;
   width: 70vw;
   height: 70vh;
-  max-width: 800px;
+  max-width: 850px;
   box-shadow: 1px 4px 4px rgba(20, 20, 20, 0.5);
   border-radius: 15px; }
   .question-window > .header {
@@ -69,6 +69,14 @@ body {
       align-items: center;
       height: 50%;
       justify-content: space-around; }
+
+.question-title {
+  font-family: D2coding;
+  font-size: 26px;
+  font-weight: 400;
+  color: #57d87b;
+  width: 68%;
+  padding-top: 30px; }
 
 .answer {
   border-radius: 30px;

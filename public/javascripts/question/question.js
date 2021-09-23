@@ -59,7 +59,12 @@ const onClickAnswer = async (target) => {
 
 	if (getStore().currentQuestionNumber === 0 && picked == 1) {
 		setStore({ currentQuestionNumber: 99 });
-		toNextQuestion({ num: 99, answer1: "아뇨, 개발에 관심이 생겼습니다.", answer2: "그럼 이만!" });
+		toNextQuestion({
+			num: 99,
+			question: "갈때 가더라도 Hello World 한줄은 괜찮잖아?",
+			answer1: "장난이고, 개발 하고싶습니다.",
+			answer2: "그게뭔데.. 나갈래..",
+		});
 		return;
 	}
 
@@ -75,6 +80,10 @@ const onClickAnswer = async (target) => {
 const onClickPrevious = (target) => {
 	const button = target.closest(".pagenation-button");
 	if (!button) return;
+	if (Math.max(...getStore().questionHistory) === 0) {
+		initQuestion({ num: 0, answer1: "사이트 잘못 들어왔어요. 나갈래요", answer2: "개발에 관심이 생겼어요." });
+		return;
+	}
 	getStore().questionHistory.pop();
 	toPreviousQuestion(getStore().questionHistory[getStore().questionHistory.length - 1]);
 };
