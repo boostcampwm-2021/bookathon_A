@@ -11,12 +11,11 @@ const template = ({ num, answer1, answer2, image }) => `
                 ${image ? `<img src="${image}" />` : ""}
                 <div>
                     <div class="answer" data-answer="1">${answer1}</div>
-                    <div class="answer" data-answer="2">${answer2}</div>
+                    <div class="answer ${num === 99 ? "answer-easter" : ""}" data-answer="2">${answer2}</div>
                 </div>
             </section>
             <section class="pagenation">
-                <div class="left"><</div>
-                <div class="right">></div>
+                <div class="pagenation-button"><</div>
             </section>
         </div>
     </div>
