@@ -1,19 +1,32 @@
-@import url("./common.css");
+@import url(./common.css);
 #app {
   min-width: 1280px;
   min-height: 800px;
   width: 100vw;
   height: 100vh;
-  background: #202644; }
+  background: #202644;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.question-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70vw;
+  height: 70vh; }
+  .question-window > .header {
+    background-color: #373638;
+    height: 30px;
+    width: 100%; }
 
 .answer:hover {
   cursor: pointer; }
 
 .answer {
-  position: absolute;
-  width: 464px;
-  height: 38px;
-  left: 140px;
   border-radius: 15px; }
 
 .answer:first-child {
