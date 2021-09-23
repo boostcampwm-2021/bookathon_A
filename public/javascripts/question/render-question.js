@@ -1,15 +1,15 @@
 const target = () => document.querySelector("#app");
 
-const template = ({ question, answer1, answer2 }) => `
+const template = ({ num, answer1, answer2 }) => `
     <div class="question-page">
         <div class="question-window">
             <header>
             </header>
             <section>
-                <div>${question}</div>
+                <div class="question-number">${num}</div>
                 <div>
-                    <div>${answer1}</div>
-                    </div>${answer2}</div>
+                    <div class="answer" data-answer="1">${answer1}</div>
+                    <div class="answer" data-answer="2">${answer2}</div>
                 </div>
             </section>
             <section class="pagenation">
