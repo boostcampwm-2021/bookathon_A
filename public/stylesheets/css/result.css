@@ -41,7 +41,8 @@ img {
   width: 70vw;
   height: auto;
   max-width: 850px;
-  box-shadow: 1px 4px 4px rgba(20, 20, 20, 0.5);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
   border-radius: 15px; }
   .result-window > .header {
     background-color: #302a2f;
