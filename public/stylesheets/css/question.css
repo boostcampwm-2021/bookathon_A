@@ -1,4 +1,15 @@
-@import url(./common.css);
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202644; }
+
+@font-face {
+  font-family: D2coding;
+  src: url("../../src/font/D2Coding.ttc"); }
+
 #app {
   min-width: 1280px;
   min-height: 800px;

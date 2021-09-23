@@ -1,4 +1,4 @@
-@import url("./common.css");
+@import "./common.scss";
 
 .result {
     @include flex(center, center, column);
