@@ -35,11 +35,39 @@ router.get('/', function(req, res, next) {
     if(req.query.pick) {
         pick = req.query.pick;
         const resNum = questionTable[question][pick];
-        questionDB.find({num: resNum}, (err, docs) => res.json(docs));
+
+        if(checkResNum(resNum) === "result") { // resNum이 결과인 경우 결과만 반환
+            res.json(resNum);
+        }
+        else {
+            questionDB.find({num: resNum}, (err, docs) => res.json(docs));
+        }
     }
-    else {
+    else { // pick이 없는 경우 해당 문제만 반환
         questionDB.find({num: question}, (err, docs) => res.json(docs));
     }
 });
+
+const checkResNum = (num) => {
+    let result = "";
+
+    switch (num) {
+        case "FE":
+        case "BE":
+        case "iOS":
+        case "Android":
+        case "빅데이터":
+        case "AI":
+        case "IOT":
+        case "임베디드":
+        case "네이버 커넥트":
+        case "크롱":
+        case "호눅스":
+            result = "result";
+            break;
+        dafault:
+            result = "question";
+    }
+}
 
 module.exports = router;
