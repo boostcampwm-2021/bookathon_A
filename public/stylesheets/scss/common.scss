@@ -1,1 +1,18 @@
-// scss test
+@mixin flex($row: center, $col: center, $direction: row) {
+    display: flex;
+    justify-content: $row;
+    align-items: $col;
+    flex-direction: $direction;
+}
+
+@mixin size($width: 100%, $height: 100%) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font($size: 48px, $weight: 400, $color: #57D87B) {
+    //font-family: 'Courier New', Courier, monospace;
+    font-size: $size;
+    font-weight: $weight;
+    color: #57D87B;
+}
