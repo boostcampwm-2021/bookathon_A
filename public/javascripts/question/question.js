@@ -36,7 +36,6 @@ const onClickEasterEggHandler = (e) => {
 
 	e.stopImmediatePropagation();
 	const newAnswer = $answer.cloneNode(true);
-	console.log(newAnswer);
 	$answer.style.visibility = "hidden";
 
 	const frame = document.querySelector(".question-content");
@@ -45,7 +44,6 @@ const onClickEasterEggHandler = (e) => {
 		parseInt(window.getComputedStyle(frame).height),
 		parseInt(window.getComputedStyle(frame).width),
 	];
-	console.log(frameHeight, frameWidth);
 
 	newAnswer.style.position = "absolute";
 	newAnswer.style.top = `${Math.random() * frameHeight}px`;
@@ -70,7 +68,6 @@ const onClickAnswer = async (target) => {
 		getStore().questionHistory.push(getStore().currentQuestionNumber);
 		toNextQuestion(result);
 	} else {
-		//! to result page
 		renderResult(result);
 	}
 };
@@ -78,10 +75,14 @@ const onClickAnswer = async (target) => {
 const onClickPrevious = (target) => {
 	const button = target.closest(".pagenation-button");
 	if (!button) return;
-	console.log("hihi");
-	console.log(getStore().questionHistory);
 	getStore().questionHistory.pop();
 	toPreviousQuestion(getStore().questionHistory[getStore().questionHistory.length - 1]);
+};
+
+const onClickExit = (target) => {
+	const button = target.closest(".exit");
+	if (!button) return;
+	// alert('')
 };
 
 const addEvents = () => {
@@ -90,8 +91,7 @@ const addEvents = () => {
 	});
 	$target().addEventListener("click", ({ target }) => {
 		onClickAnswer(target);
-	});
-	$target().addEventListener("click", ({ target }) => {
 		onClickPrevious(target);
+		onClickExit(target);
 	});
 };

@@ -4,7 +4,7 @@ const template = ({ num, answer1, answer2, image }) => `
     <div class="question-page">
         <div class="question-window">
             <div class="header">
-                <div></div><div></div><div></div>
+                <div class="exit"></div><div></div><div></div>
             </div>
             <section class="question-content">
                 <div class="question-number">${num}</div>
