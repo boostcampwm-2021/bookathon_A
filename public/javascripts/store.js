@@ -1,9 +1,7 @@
 let store = {
 	currentPage: "main",
 	currentQuestionNumber: 0,
-	questionHistory: [
-		// ex. { 0 : 1, 1: 2, 3: 1, ...}
-	],
+	questionHistory: [0],
 };
 
 export const setStore = (obj) => {

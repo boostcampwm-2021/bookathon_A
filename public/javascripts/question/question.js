@@ -14,9 +14,16 @@ export const initQuestion = async ({ num, answer1, answer2 }) => {
 };
 
 const fetchQuestion = async (questionNumber, pick) => {
-	return fetch(`${BASE_API_URL}?q=${questionNumber}&pick=${pick}`).then((res) => {
+	const url = `${BASE_API_URL}?q=${questionNumber}${pick ? `&pick=${pick}` : ""}`;
+	return fetch(url).then((res) => {
 		return res.json();
 	});
+};
+
+const toPreviousQuestion = async (prevQuestionNumber) => {
+	const [result] = await fetchQuestion(prevQuestionNumber);
+	setStore({ currentQuestionNumber: parseInt(prevQuestionNumber) });
+	render(result);
 };
 
 const toNextQuestion = (data) => {
@@ -60,6 +67,7 @@ const onClickAnswer = async (target) => {
 
 	if (!result.name) {
 		setStore({ currentQuestionNumber: result.num });
+		getStore().questionHistory.push(getStore().currentQuestionNumber);
 		toNextQuestion(result);
 	} else {
 		//! to result page
@@ -71,6 +79,9 @@ const onClickPrevious = (target) => {
 	const button = target.closest(".pagenation-button");
 	if (!button) return;
 	console.log("hihi");
+	console.log(getStore().questionHistory);
+	getStore().questionHistory.pop();
+	toPreviousQuestion(getStore().questionHistory[getStore().questionHistory.length - 1]);
 };
 
 const addEvents = () => {
