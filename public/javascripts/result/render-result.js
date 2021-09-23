@@ -1,6 +1,6 @@
 const target = () => app;
 
-const template = ({ result }) => `
+const template = (result) => `
     <div class="result">
         <div class="result-header">
             나는 ${result.name} 개발자입니다.
@@ -39,6 +39,6 @@ const template = ({ result }) => `
     </div>
 `;
 
-export const render = ({ result, content }) => {
-	target().innerHTML = template({ result, content });
+export const render = (result) => {
+	target().innerHTML = template(result);
 };
