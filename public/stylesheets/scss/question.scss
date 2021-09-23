@@ -77,6 +77,10 @@
 			height: 50%;
 			justify-content: space-around;
 		}
+
+		& span {
+			@include font(30px);
+		}
 	}
 }
 

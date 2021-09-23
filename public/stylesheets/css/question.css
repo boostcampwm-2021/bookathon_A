@@ -69,6 +69,11 @@ body {
       align-items: center;
       height: 50%;
       justify-content: space-around; }
+    .question-window > .question-content span {
+      font-family: D2coding;
+      font-size: 30px;
+      font-weight: 400;
+      color: #57d87b; }
 
 .question-title {
   font-family: D2coding;

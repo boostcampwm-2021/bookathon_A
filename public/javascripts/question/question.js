@@ -7,9 +7,9 @@ const BASE_API_URL = "http://localhost:3000/question";
 // doms
 const $target = () => document.querySelector("#app");
 
-export const initQuestion = async ({ num, answer1, answer2 }) => {
+export const initQuestion = async ({ num, question, answer1, answer2 }) => {
 	setStore({ currentPage: num });
-	render({ num, answer1, answer2 });
+	render({ num, question, answer1, answer2 });
 	addEvents();
 };
 

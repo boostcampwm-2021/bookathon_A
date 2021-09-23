@@ -11,6 +11,7 @@ const template = ({ num, question, answer1, answer2, image }) => `
                 ${image ? `<img src="${image}" />` : ""}
                 <div>
                     <div class="answer" data-answer="1">${answer1}</div>
+                    <span>vs</span>
                     <div class="answer ${num === 99 ? "answer-easter" : ""}" data-answer="2">${answer2}</div>
                 </div>
             </section>
