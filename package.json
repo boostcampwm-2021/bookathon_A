@@ -22,12 +22,8 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "babel-loader": "^8.2.2",
-<<<<<<< HEAD
-    "webpack": "^5.53.0",
-=======
     "node-sass": "^6.0.1",
     "webpack": "^5.52.0",
->>>>>>> dbf02516021614deb9c52312b6a458328ffca799
     "webpack-cli": "^4.8.0"
   },
   "description": "- 개발자 직무별 MBTI (17번)",

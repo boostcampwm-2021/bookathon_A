@@ -29,6 +29,7 @@ const onClickAnswer = async (target) => {
 	if (!$answer) return;
 	const picked = $answer.dataset.answer;
 	const result = await fetchQuestion(getStore().currentQuestionNumber, picked);
+	console.log(result);
 
 	if (!result.name) {
 		setStore({ currentQuestionNumber: result[0].num });

@@ -3,8 +3,8 @@ const $target = () => document.querySelector("#app");
 const template = ({ num, answer1, answer2, image }) => `
     <div class="question-page">
         <div class="question-window">
-            <header>
-            </header>
+            <div class="header">
+            </div>
             <section>
                 <div class="question-number">${num}</div>
                 ${image && `<img src="${image}" />`}
