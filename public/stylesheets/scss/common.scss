@@ -2,6 +2,17 @@
     display: none;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202644;
+}
+
+@font-face {
+    font-family: D2coding;
+    src: url("../../src/font/D2Coding.ttc");
+}
+
 @mixin flex($row: center, $col: center, $direction: row) {
     display: flex;
     justify-content: $row;
@@ -15,7 +26,7 @@
 }
 
 @mixin font($size: 48px, $weight: 400, $color: #57D87B) {
-    //font-family: 'Courier New', Courier, monospace;
+    font-family: D2coding;
     font-size: $size;
     font-weight: $weight;
     color: #57D87B;
