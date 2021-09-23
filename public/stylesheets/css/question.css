@@ -11,8 +11,6 @@ body {
   src: url("../../src/font/D2Coding.ttc"); }
 
 #app {
-  min-width: 1280px;
-  min-height: 800px;
   width: 100vw;
   height: 100vh;
   background: #202644;
@@ -25,25 +23,68 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   width: 70vw;
-  height: 70vh; }
+  height: 70vh;
+  max-width: 800px;
+  box-shadow: 1px 4px 4px rgba(20, 20, 20, 0.5); }
   .question-window > .header {
-    background-color: #373638;
-    height: 30px;
-    width: 100%; }
-
-.answer:hover {
-  cursor: pointer; }
+    background-color: #302a2f;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative; }
+    .question-window > .header > div {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 7px;
+      left: 7px;
+      border-radius: 8px; }
+    .question-window > .header > div:nth-of-type(1) {
+      background-color: #ff5f57; }
+    .question-window > .header > div:nth-of-type(2) {
+      background-color: #feff2e;
+      left: 30px; }
+    .question-window > .header > div:nth-of-type(3) {
+      background-color: #27c740;
+      left: 55px; }
+  .question-window > .question-content {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    background-color: #3c4043;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .question-window > .question-content > div:nth-of-type(2) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 50%;
+      justify-content: space-around; }
 
 .answer {
-  border-radius: 15px; }
+  border-radius: 30px;
+  width: 70%;
+  height: 70px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: D2coding;
+  font-size: 20px;
+  font-weight: 400;
+  color: #57d87b;
+  color: white; }
 
 .answer:first-child {
-  top: 131px;
-  background: #d9c8ff; }
+  background: #cab1ff; }
 
 .answer:last-child {
-  top: 190px;
-  background: #b3b9f1; }
+  background: #a1abff; }
