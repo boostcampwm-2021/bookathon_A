@@ -16,7 +16,8 @@ body {
   background: #202644;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
+  top: 15vh;
   align-items: center; }
 
 .question-window {

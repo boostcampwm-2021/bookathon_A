@@ -77,16 +77,16 @@ const onClickAnswer = async (target) => {
 	}
 };
 
-const onClickPrevious = (target) => {
-	const button = target.closest(".pagenation-button");
-	if (!button) return;
-	if (Math.max(...getStore().questionHistory) === 0) {
-		initQuestion({ num: 0, answer1: "사이트 잘못 들어왔어요. 나갈래요", answer2: "개발에 관심이 생겼어요." });
-		return;
-	}
-	getStore().questionHistory.pop();
-	toPreviousQuestion(getStore().questionHistory[getStore().questionHistory.length - 1]);
-};
+// const onClickPrevious = (target) => {
+// 	const button = target.closest(".pagenation-button");
+// 	if (!button) return;
+// 	if (Math.max(...getStore().questionHistory) === 0) {
+// 		initQuestion({ num: 0, answer1: "사이트 잘못 들어왔어요. 나갈래요", answer2: "개발에 관심이 생겼어요." });
+// 		return;
+// 	}
+// 	getStore().questionHistory.pop();
+// 	toPreviousQuestion(getStore().questionHistory[getStore().questionHistory.length - 1]);
+// };
 
 const onClickExit = (target) => {
 	const button = target.closest(".exit");
@@ -100,7 +100,7 @@ const addEvents = () => {
 	});
 	$target().addEventListener("click", ({ target }) => {
 		onClickAnswer(target);
-		onClickPrevious(target);
+		// onClickPrevious(target);
 		onClickExit(target);
 	});
 };
