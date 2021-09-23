@@ -28,11 +28,13 @@ const onClickAnswer = async (target) => {
 	const $answer = target.closest(".answer");
 	if (!$answer) return;
 	const picked = $answer.dataset.answer;
-	const [result] = await fetchQuestion(getStore().currentQuestionNumber, picked);
+	const result = await fetchQuestion(getStore().currentQuestionNumber, picked);
 
-	if (result) {
-		setStore({ currentQuestionNumber: result.num });
-		toNextQuestion(result);
+	if (!result.name) {
+		setStore({ currentQuestionNumber: result[0].num });
+		toNextQuestion(result[0]);
+	} else {
+		//! to result page
 	}
 };
 
