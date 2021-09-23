@@ -23,7 +23,8 @@
 	height: 70vh;
 	max-width: 850px;
 
-	box-shadow: 1px 4px 4px rgba(20, 20, 20, 0.5);
+	-webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
+	box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
 	border-radius: 15px;
 
 	& > .header {
@@ -103,6 +104,11 @@
 
 	@include font(20px, 400, white);
 	color: white;
+
+	&:hover {
+		-webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
+		box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.46);
+	}
 }
 .answer:first-child {
 	background: #cab1ff;
