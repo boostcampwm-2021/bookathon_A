@@ -9,18 +9,33 @@
     "cookie-parser": "~1.4.4",
     "core-js": "^3.17.2",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "^4.16.4",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
-    "pug": "2.0.0-beta11"
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.15.4",
+    "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "babel-loader": "^8.2.2",
+    "node-sass": "^6.0.1",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0"
-  }
+  },
+  "description": "- 개발자 직무별 MBTI (17번)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boostcampwm-2021/bookathon_A.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boostcampwm-2021/bookathon_A/issues"
+  },
+  "homepage": "https://github.com/boostcampwm-2021/bookathon_A#readme"
 }

@@ -1,0 +1,14 @@
+body {
+  margin: 0px 0px; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202644; }
+
+@font-face {
+  font-family: D2coding;
+  src: url("../../src/font/D2Coding.ttc"); }
