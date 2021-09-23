@@ -1,0 +1,7 @@
+@import url("./common.css");
+#app {
+  min-width: 1280px;
+  min-height: 800px;
+  width: 100vw;
+  height: 100vh;
+  background: #202644; }

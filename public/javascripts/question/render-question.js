@@ -1,4 +1,4 @@
-const target = () => document.querySelector("#app");
+const $target = () => document.querySelector("#app");
 
 const template = ({ num, answer1, answer2 }) => `
     <div class="question-page">
@@ -21,5 +21,6 @@ const template = ({ num, answer1, answer2 }) => `
 `;
 
 export const render = ({ num, answer1, answer2 }) => {
-	target().innerHTML = template({ num, answer1, answer2 });
+	$target().innerHTML = "";
+	$target().insertAdjacentHTML("beforeend", template({ num, answer1, answer2 }));
 };
