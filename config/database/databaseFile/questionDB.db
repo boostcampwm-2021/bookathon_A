@@ -1,22 +1,22 @@
-{"num":"18","answer1":"나는 준비된 퍼즐을 맞추는 것이 좋다.","answer2":"나는 퍼즐을 직접 제작하는 것이 좋다.","_id":"0iDLttIJkeSWb4DG"}
-{"num":"10","answer1":"나는 콤퓨타가 짱이다.","answer2":"나는 스마트폰이 짱이다.","_id":"4xaway25qwOgAN0V"}
-{"num":"6","answer1":"커피는 하루에 한 잔이면 충분하다.","answer2":"커피는 세 잔 이상 마셔야한다.","_id":"5TtsaBrOmPav4gpA"}
-{"num":"4","answer1":"나는 책을 자주 읽는다.","answer2":"나는 책을 라면 받침대로 사용한다.","_id":"6OLR8tOARto3lG5B"}
-{"num":"13","answer1":"나는 직장인이다.","answer2":"나는 백수다.","_id":"BFeJTmX7QukkomFs"}
-{"num":"21","answer1":"내가 만든 제품에 인터넷 따윈 필요 없다.","answer2":"내가 만든 제품에 인터넷이 연결되면 좋겠다.","_id":"BhBCFWPRIEdm2ChN"}
-{"num":"15","answer1":"나는 아침에 일어나서 프렌치 토스트와 커피를 마신다.","answer2":"나는 아침에 일어나서 시리얼을 먹는다.","_id":"D08QMtZWEtfguB7C"}
-{"num":"5","answer1":"나는 그렇다고 강아지가 싫진 않다.","answer2":"나는 강아지가 싫다.","_id":"FfzJPP2w8FOKUXEB"}
-{"num":"14","answer1":"나는 마법사다.","answer2":"나는 머글이다.","_id":"GGokVldVo9HLypgJ"}
-{"num":"2","answer1":"나는 게임으로 먹고 사는 것을 고민해본 적이 있다.","answer2":"나는 게임은 취미로만 즐긴다.","_id":"HnZP0lbIqiNxbD1N"}
-{"num":"0","answer1":"사이트 잘못 들어왔어요. 나갈래요.","answer2":"나는 개발에 관심이 생겼다.","_id":"OxgIOmKne6AvJrU6"}
-{"num":"3","answer1":"나는 고양이를 더 좋아한다.","answer2":"나는 강아지를 더 좋아한다.","_id":"TozeApEsSJHICNUM"}
-{"num":"22","answer1":"사실 게임으로 먹고 사는 것을 고민해본적 없다.","answer2":"진짜 게임으로 먹고 사는 것을 고민해본적이 있다.","_id":"ZEZMfO73UfEyYaxg"}
-{"num":"25","answer1":"나는 부스트캠프 마스터가 되고 싶다.","answer2":"나는 부스트캠프 운영진이 되고 싶다.","_id":"Zo52QEqxrQJ8lqbu"}
-{"num":"19","answer1":"나는 알파고가 이기길 바랬다.","answer2":"나는 이세돌이 이기길 바랬다.","_id":"arorQ0H70H8w7lZj"}
-{"num":"26","answer1":"나는 프론트엔드 마스터가 되고 싶다.","answer2":"나는 깃 마스터가 되고 싶다.","_id":"cbW1IAyyntQfSvai"}
-{"num":"17","answer1":"나는 이 그림이 불편하다.","answer2":"나는 이 그림이 아무렇지 않다.","_id":"eqop2OmawUhXhX7v"}
-{"num":"1","answer1":"나는 지금 나온 기술을 잘 활용하는게 재밌다.","answer2":"나는 공상 과학 영화 속 기술에 더 흥미가 있다.","_id":"hEQBN1PDLPAkOsQ7"}
-{"num":"12","answer1":"나는 개발왕이 될거다.","answer2":"나는 개발에 목숨걸 생각은 없다.","_id":"iXqbgHPvXZKgoEgy"}
-{"num":"16","answer1":"나는 숨은 그림찾기를 잘한다.","answer2":"나는 부루마불을 잘한다.","_id":"r8qk7yg9k045Ygrw"}
-{"num":"20","answer1":"기계는 인간의 도구이다.","answer2":"인간은 기계의 도구이다.","_id":"yohGDtZBXVxQxXaC"}
-{"num":"11","answer1":"나는 수학의 정석을 풀며 희열을 느껴본적이 있다.","answer2":"나는 수학의 정석을 집합까지만 읽어봤다.","_id":"zj91o2tM3DGjnj70"}
+{"num":"3","question":"고양이와 강아지 중 한마리랑만 살 수 있다면?","answer1":"나는 고양이와 산다","answer2":"나는 강아지와 산다.","_id":"296CIqTaFu1XXBSK"}
+{"num":"0","question":"미래의 개발자님, 안녕하세요!","answer1":"사이트 잘못 들어왔어요. 나갈래요.","answer2":"개발에 관심이 생겼다.","_id":"3Cb4ixrEjcDBtJkb"}
+{"num":"26","question":"나는 개발자로 성장해서","answer1":"프론트엔드 마스터가 될것이다.","answer2":"백엔드 & 깃 마스터가 될것이다.","_id":"5oVWRlixYmMsvrZp"}
+{"num":"19","question":"나는 알파고와 이세돌의 대국을 보며","answer1":"알파고를 응원했다.","answer2":"이세돌을 응원했다.","_id":"8SyiTZmLXoIYHrV3"}
+{"num":"17","question":"나는 이 그림을 보고","answer1":"화가 치밀어 오른다.","answer2":"무슨 차이가 있죠?","_id":"8Z1LOYj9gStZySy1"}
+{"num":"21","question":"나는 우리집 냉장고에","answer1":"시대가 어느땐데 인터넷은 연결되어있어야 한다.","answer2":"인터넷이 굳이 연결되지 않아도 된다.","_id":"8aZGolDQsympN2In"}
+{"num":"15","question":"죽을때까지 아침 메뉴가 고정이라면?","answer1":"프렌치 토스트와 커피를 선택한다.","answer2":"시리얼을 선택한다.","_id":"AbloMbQ9ocGwugW5"}
+{"num":"1","question":"나는 기반기술과 신기술 중","answer1":"근간이 되는 기반기술이 좋다.","answer2":"공상과학에 나올법한 신기술이 좋다.","_id":"MpK5wXJjwSUzydMB"}
+{"num":"18","question":"나는 퍼즐을 맞출 때","answer1":"준비된 퍼즐을 맞추는 것이 좋다.","answer2":"퍼즐 조각을 직접 만들고 싶다.","_id":"NyrC2i6JlgMSkFE4"}
+{"num":"12","question":"나의 목표는?","answer1":"개발 왕이다.","answer2":"개발 평민이다.","_id":"QrdQaCArO5CW0Ntb"}
+{"num":"11","question":"고등학교 시절, 나는 수학 교과서를","answer1":"풀며 희열을 느꼈다.","answer2":"집합까지만 봤다.","_id":"SsRjk477GsNubwYf"}
+{"num":"5","question":"선택받지 못한 강아지가 슬퍼한다.","answer1":"그럼 한번 키워볼까..?","answer2":"그래도 강아지는 싫다.","_id":"VSXR2NRRE4NDappw"}
+{"num":"22","question":"나는 사실 게임으로","answer1":"고민해본 적이 없다.","answer2":"진지하게 고민해본 적이 있다.","_id":"XdoZB3bPH3UUiDpC"}
+{"num":"13","question":"나의 현재 상태는?","answer1":"직장인이다.","answer2":"백수다.","_id":"bz5UhTBwJqbdVgTY"}
+{"num":"2","question":"나에게 게임은?","answer1":"먹고 사는 것을 고민해볼 정도로 잘한다.","answer2":"취미일 뿐이다.","_id":"jqXYSU0cK00kwT8U"}
+{"num":"10","question":"나에게 전자기기는?","answer1":"콤퓨타가 제일이다.","answer2":"스마트폰이 최고다. ","_id":"kPZ6ZtFPwy2Q6uCQ"}
+{"num":"16","question":"내가 잘하는 게임은?","answer1":"숨은 그림찾기","answer2":"부루마불","_id":"l6HxtOBaYdCiXjYq"}
+{"num":"4","question":"나에게 책은?","answer1":"마음의 양식이다.","answer2":"라면 받침대에 불과하다.","_id":"rZfmb8f7kW1MA89M"}
+{"num":"6","question":"나는 평균적으로 커피를","answer1":"하루에 한잔 아래로 마신다.","answer2":"세 잔 이상 마셔야 한다.","_id":"sCN0e4Ta12OXj4tK"}
+{"num":"14","question":"내가 호그와트 학생이라면?","answer1":"그리핀도르다.","answer2":"슬리데린이다.","_id":"slPg1AxnFgM8bXxW"}
+{"num":"25","question":"나는 부스트캠프에서","answer1":"마스터가 되고 싶다.","answer2":"운영진이 되고 싶다.","_id":"xOciJlUs2OH10PjW"}
+{"num":"20","question":"내가 터미네이터를 보며 든 생각은?","answer1":" 기계는 인간의 도구일 뿐이다.","answer2":"인류는 기계에게 지배당할 것이다.","_id":"yC2kh6nLGyRS6KvL"}
