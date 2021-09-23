@@ -49,13 +49,12 @@ router.get('/', function(req, res, next) {
 });
 
 const checkResNum = (num) => {
-    let result = "";
-
     switch (num) {
         case "FE":
         case "BE":
         case "iOS":
         case "Android":
+        case "게임":
         case "빅데이터":
         case "AI":
         case "IOT":
@@ -63,11 +62,10 @@ const checkResNum = (num) => {
         case "네이버 커넥트":
         case "크롱":
         case "호눅스":
-            result = "result";
-            break;
-        dafault:
-            result = "question";
+            return "result";
     }
+
+    return "question";
 }
 
 module.exports = router;
