@@ -1,1 +1,16 @@
 @import url("./common.css");
+
+.result {
+    @include flex(center, center, column);
+    @include size();
+}
+
+.result-header {
+    @include flex();
+    @include font();
+}
+
+.result-image {
+    @include flex();
+    @include size(200px, 200px);
+}
