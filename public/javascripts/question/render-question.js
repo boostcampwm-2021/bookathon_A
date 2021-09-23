@@ -15,9 +15,7 @@ const template = ({ num, question, answer1, answer2, image }) => `
                     <div class="answer ${num === 99 ? "answer-easter" : ""}" data-answer="2">${answer2}</div>
                 </div>
             </section>
-            <section class="pagenation">
-                <div class="pagenation-button"><</div>
-            </section>
+            <section class="pagenation"></section>
         </div>
     </div>
 `;
