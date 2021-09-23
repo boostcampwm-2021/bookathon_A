@@ -1,7 +1,7 @@
 const database = require('nedb');
 
 const questionDB = new database({
-    filename: './databaseFile/questionDB.db',
+    filename: './config/database/databaseFile/questionDB.db',
     autoload: true
 });
 
