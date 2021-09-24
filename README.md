@@ -52,8 +52,9 @@ https://futurecreator.github.io/2018/11/12/my-best-programming-font-top-3/
 - 질문 응답 내용을 통해 선별된 하나의 직무 분야를 보여준다.
 - 선택된 하나의 직무 분야에 대한 간단한 설명과 사용되는 언어, 이해를 돕기 위해 유명한 서비스를 소개한다.
 - 이스터에그 있습니다.
-
-# 시연 영상   
    
-# 링크   
-imundefined.kro.kr   
+# 시연 영상    
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/71963121/134624298-df5eed36-641e-49a8-b8df-fb6da703b72c.gif)
+
+# 링크    
+imundefined.kro.kr    
