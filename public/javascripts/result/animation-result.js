@@ -1,48 +1,48 @@
 export const imageSlider = (target) => {
-    const onDisplay = (imgNum) => {
-        const imgs = target.querySelectorAll("img");
+	const onDisplay = (imgNum) => {
+		const imgs = target.querySelectorAll("img");
 
-        imgs[imgNum].style.display = "block";
-        
-        let opacity = 0;
-        let time = 50;
+		imgs[imgNum].style.display = "block";
 
-        setTimeout(() => {
-            const seeIn = setInterval(() => {
-                imgs[imgNum].style.opacity = opacity;
-                opacity += 1 / time;
-            }, 10);
-    
-            setTimeout(() => {
-                clearInterval(seeIn);
-            }, time * 10);
-        }, 0);
+		let opacity = 0;
+		let time = 50;
 
-        if(imgs.length === 1) return;
+		setTimeout(() => {
+			const seeIn = setInterval(() => {
+				imgs[imgNum].style.opacity = opacity;
+				opacity += 1 / time;
+			}, 10);
 
-        setTimeout(() => {
-            const seeOut = setInterval(() => {
-                imgs[imgNum].style.opacity = opacity;
-                opacity -= 1 / time;
-            }, 10);
+			setTimeout(() => {
+				clearInterval(seeIn);
+			}, time * 10);
+		}, 0);
 
-            setTimeout(() => {
-                clearInterval(seeOut);
-            }, time * 10);
-        }, 2500);
+		if (imgs.length === 1) return;
 
-        setTimeout(() => {
-            imgs[imgNum].style.display = "none";
+		setTimeout(() => {
+			const seeOut = setInterval(() => {
+				imgs[imgNum].style.opacity = opacity;
+				opacity -= 1 / time;
+			}, 10);
 
-            imgNum++;
+			setTimeout(() => {
+				clearInterval(seeOut);
+			}, time * 10);
+		}, 2500);
 
-            if(imgNum === imgs.length) imgNum = 0;
+		setTimeout(() => {
+			imgs[imgNum].style.display = "none";
 
-            onDisplay(imgNum);
-        }, 3000);
-    };
+			imgNum++;
 
-    let imgNum = 0;
+			if (imgNum === imgs.length) imgNum = 0;
 
-    onDisplay(imgNum);
-}
+			onDisplay(imgNum);
+		}, 3000);
+	};
+
+	let imgNum = 0;
+
+	onDisplay(imgNum);
+};

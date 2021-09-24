@@ -61,28 +61,35 @@ body {
     .question-window > .header > div:nth-of-type(3) {
       background-color: #27c740;
       left: 55px; }
-  .question-window > .question-content {
+  .question-window > .question-content-position {
     width: 100%;
-    position: absolute;
-    top: 30px;
-    background-color: #3c4043;
-    height: 90%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around; }
-    .question-window > .question-content > div:nth-of-type(2) {
+    flex-direction: row;
+    background-color: #3c4043; }
+    .question-window > .question-content-position > .question-content {
       width: 100%;
-      display: flex;
+      position: absolute;
+      top: 30px;
+      height: 90%;
+      display: none;
       flex-direction: column;
       align-items: center;
-      height: 50%;
       justify-content: space-around; }
-    .question-window > .question-content span {
-      font-family: D2coding;
-      font-size: 30px;
-      font-weight: 400;
-      color: #57d87b; }
+      .question-window > .question-content-position > .question-content > div:nth-of-type(2) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50%;
+        justify-content: space-around; }
+      .question-window > .question-content-position > .question-content span {
+        font-family: D2coding;
+        font-size: 30px;
+        font-weight: 400;
+        color: #57d87b; }
 
 .question-title {
   font-family: D2coding;

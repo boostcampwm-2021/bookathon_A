@@ -75,7 +75,7 @@ img {
       left: 55px; }
 
 .result {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -116,6 +116,10 @@ img {
   font-size: 30px; }
 
 .result-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 80%;
   line-height: 2; }
 
@@ -142,3 +146,25 @@ img {
   top: 0%;
   display: none;
   opacity: 0; }
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px soild #57d87b; }
+  header > button {
+    border: none;
+    background: none;
+    color: #57d87b;
+    font-family: "D2CODING";
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer; }
