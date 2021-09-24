@@ -109,10 +109,8 @@ img {
 
 .result-list {
 	width: 400px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	height: 400px;
+	@include flex();
 }
 
 .result-name {
@@ -147,4 +145,12 @@ img {
 	border-radius: 15px;
 	background-color: rgb(48, 42, 47);
 	margin-top: -30px;
+}
+
+.result-img {
+	position: relative;
+	left: 0%;
+	top: 0%;
+	display: none;
+	opacity: 0;
 }

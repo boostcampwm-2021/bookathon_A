@@ -1,6 +1,13 @@
 ::-webkit-scrollbar {
   display: none; }
 
+div {
+  user-select: none;
+  cursor: default; }
+
+img {
+  -webkit-user-drag: none; }
+
 body {
   margin: 0;
   padding: 0;
@@ -95,10 +102,11 @@ img {
 
 .result-list {
   width: 400px;
+  height: 400px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
 
 .result-name {
   padding-top: 30px;
@@ -127,3 +135,10 @@ img {
   border-radius: 15px;
   background-color: #302a2f;
   margin-top: -30px; }
+
+.result-img {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  display: none;
+  opacity: 0; }
