@@ -57,4 +57,4 @@ https://futurecreator.github.io/2018/11/12/my-best-programming-font-top-3/
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/71963121/134624589-38943f7b-b67f-4231-8754-fe5870f86437.gif)
 
 # 링크    
-imundefined.kro.kr    
+http://imundefined.kro.kr/   
