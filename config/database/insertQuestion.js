@@ -12,7 +12,7 @@ const questionDB = new database({
 questionDB.insert({ "num" : "0", "question": "미래의 개발자님, 안녕하세요!", "answer1" : "사이트 잘못 들어왔어요. 나갈래요.", "answer2" : "개발에 관심이 생겼다." }, function(err, newDoc) {});
 questionDB.insert({ "num" : "1", "question": "나는 기반기술과 신기술 중", "answer1" : "근간이 되는 기반기술이 좋다.", "answer2" : "공상과학에 나올법한 신기술이 좋다." }, function(err, newDoc) {});
 questionDB.insert({ "num" : "2", "question": "나에게 게임은?", "answer1" : "먹고 사는 것을 고민해볼 정도로 잘한다.", "answer2" : "취미일 뿐이다." }, function(err, newDoc) {});
-questionDB.insert({ "num" : "3", "question": "고양이와 강아지 중 한마리랑만 살 수 있다면?", "answer1" : "나는 고양이와 산다", "answer2" : "나는 강아지와 산다." }, function(err, newDoc) {});
+questionDB.insert({ "num" : "3", "question": "고양이와 강아지 중 한마리랑만 살 수 있다면?", "answer1" : "나는 고양이와 산다.", "answer2" : "나는 강아지와 산다." }, function(err, newDoc) {});
 questionDB.insert({ "num" : "4", "question": "나에게 책은?", "answer1" : "마음의 양식이다.", "answer2" : "라면 받침대에 불과하다." }, function(err, newDoc) {});
 questionDB.insert({ "num" : "5", "question": "선택받지 못한 강아지가 슬퍼한다.", "answer1" : "그럼 한번 키워볼까..?", "answer2" : "그래도 강아지는 싫다." }, function(err, newDoc) {});
 questionDB.insert({ "num" : "6", "question": "나는 평균적으로 커피를", "answer1" : "하루에 한잔 아래로 마신다.", "answer2" : "세 잔 이상 마셔야 한다." }, function(err, newDoc) {});

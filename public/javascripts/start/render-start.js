@@ -1,9 +1,10 @@
+
 import  { AsciiMorph } from './ascii-art/asciiMorph.js';
 
 const $target = () => document.querySelector("#app");
 
-const template = () =>{
-    return `
+const template = () => {
+	return `
     <div class="question-page">
         <div class="question-window">
             <div class="header">
@@ -20,7 +21,7 @@ const template = () =>{
             </section>
              <section class="pagenation"></section>
         </div>
-    </div>  
+    </div>
     `
 }
 
