@@ -65,7 +65,7 @@
 		@include size(100%, 100%);
 		@include flex();
 		z-index: 2;
-		
+
 		& > .question-content {
 			width: 100%;
 			position: absolute;
@@ -172,7 +172,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: rgb(60, 64, 67);
-	height: 90%;
+	height: 92%;
 	z-index: 800;
 }
 
