@@ -76,7 +76,7 @@ export const typing = (target, string, otherTarget) => {
 
             setTimeout(() => {
                 otherTarget.style.visibility = "visible";
-            }, 500);
+            }, 10);
 
             return;
         }
