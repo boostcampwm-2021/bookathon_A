@@ -1,6 +1,7 @@
 import { render } from "./render-question.js";
 import { renderResult } from "../result/result.js";
 import { setStore, getStore } from "../store.js";
+import { nextPage } from "../animation.js";
 
 const BASE_API_URL = "http://localhost:3000/question";
 
@@ -65,6 +66,7 @@ const onClickAnswer = async (target) => {
 			answer1: "장난이고, 개발 하고싶습니다.",
 			answer2: "그게뭔데.. 나갈래..",
 		});
+		nextPage(document.querySelector(".question-content"));
 		return;
 	}
 
@@ -72,9 +74,12 @@ const onClickAnswer = async (target) => {
 		setStore({ currentQuestionNumber: result.num });
 		getStore().questionHistory.push(getStore().currentQuestionNumber);
 		toNextQuestion(result);
+		nextPage(document.querySelector(".question-content"));
 	} else {
 		renderResult(result);
+		nextPage(document.querySelector(".result"));
 	}
+
 };
 
 // const onClickPrevious = (target) => {

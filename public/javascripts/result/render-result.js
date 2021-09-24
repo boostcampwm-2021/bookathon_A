@@ -1,6 +1,6 @@
 const target = () => app;
 
-const template = (result) =>
+const template = (result, isEgg) =>
 	`<div class="result-page">
         <div class="result-window">
             <div class="header">
@@ -14,7 +14,7 @@ const template = (result) =>
                     </div>
                     <div class="result-short">${result.short}</div>
                     <div class="result-content">${result.content}</div>
-                </div>
+                </div>` + (isEgg ? "" : `
                 <div>
                     <div class="result-success">
                         <div class="title">예시</div>
@@ -29,19 +29,19 @@ const template = (result) =>
                     <div class="result-language">
                         <div class="title">사용 언어</div>
                         <div class="result-list">` +
-                result.language.reduce((p, c) => {
-                    return p + `<img class="result-img" src="../../src/image/language/${c}.png" />`;
-                }, "") +
+            result.language.reduce((p, c) => {
+                return p + `<img class="result-img" src="../../src/image/language/${c}.png" />`;
+            }, "") +
 	`
                         </div>
                     </div>
-                </div>
-            </section>
+                </div>`) + 
+    `       </section>
             <div class="result-temp"></div>        
         </div>
     </div>
 `;
 
-export const render = (result) => {
-	target().innerHTML = template(result);
+export const render = (result, isEgg) => {
+	target().innerHTML = template(result, isEgg);
 };
