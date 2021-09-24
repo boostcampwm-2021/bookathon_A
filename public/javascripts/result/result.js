@@ -4,7 +4,7 @@ import { imageSlider } from "./animation-result.js";
 import { setStore, getStore } from "../store.js";
 
 export const renderResult = (result) => {
-	const egg = ["크롱", "호눅스", "네이버 커넥트"];
+	const egg = ["크롱", "호눅스", "부스트캠프 운영진"];
 
 	if (egg.includes(result.name)) {
 		render(result, true);
