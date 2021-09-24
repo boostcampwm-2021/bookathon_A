@@ -75,9 +75,10 @@
 			align-items: center;
 			justify-content: space-around;
 	
-			& > div:nth-of-type(2) {
+			& > .question-button {
 				width: 100%;
 				display: flex;
+				visibility: hidden;
 				flex-direction: column;
 				align-items: center;
 				height: 50%;
@@ -93,7 +94,7 @@
 
 .question-title {
 	@include font(26px);
-	width: 68%;
+	width: auto;
 	padding-top: 30px;
 }
 
