@@ -3,7 +3,7 @@ const target = () => app;
 const template = (result, isEgg) =>
 	`
     <header>
-        <button>return 0;</button>
+        <a href="/">return 0;</a>
     </header>
     <div class="result-page">
         <div class="result-window">

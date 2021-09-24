@@ -160,7 +160,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   border-bottom: 1px soild #57d87b; }
-  header > button {
+  header > a {
     border: none;
     background: none;
     color: #57d87b;

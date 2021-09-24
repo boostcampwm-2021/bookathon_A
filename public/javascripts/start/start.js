@@ -1,11 +1,12 @@
 import { render } from "./render-start.js";
 import { initQuestion } from "../question/question.js";
-import { setStore } from "../store.js";
+import { setStore, initialize } from "../store.js";
 import { nextPage, typing } from "../animation.js";
 
 const $target = () => document.querySelector("#app");
 
 export const initPage = () => {
+	initialize();
 	setStore({ currentPage: -1 });
 	render();
 	addEvent();
