@@ -84,7 +84,7 @@ body {
         visibility: hidden;
         flex-direction: column;
         align-items: center;
-        height: 50%;
+        height: 40%;
         justify-content: space-around; }
       .question-window > .question-content-position > .question-content span {
         font-family: D2coding;
