@@ -75,7 +75,7 @@ img {
 }
 
 .result {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -123,6 +123,7 @@ img {
 }
 
 .result-content {
+	@include flex();
 	width: 80%;
 	line-height: 2;
 }

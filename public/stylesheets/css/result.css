@@ -75,7 +75,7 @@ img {
       left: 55px; }
 
 .result {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -116,6 +116,10 @@ img {
   font-size: 30px; }
 
 .result-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 80%;
   line-height: 2; }
 

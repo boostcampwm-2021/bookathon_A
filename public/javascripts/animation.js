@@ -46,3 +46,9 @@ export const imageSlider = (target) => {
 
     onDisplay(imgNum);
 }
+
+export const nextPage = (target) => {
+    setTimeout(() => {
+        target.style.display = "flex";
+    }, 500);
+}
