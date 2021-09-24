@@ -1,6 +1,13 @@
 ::-webkit-scrollbar {
   display: none; }
 
+div {
+  user-select: none;
+  cursor: default; }
+
+img {
+  -webkit-user-drag: none; }
+
 body {
   margin: 0;
   padding: 0;
