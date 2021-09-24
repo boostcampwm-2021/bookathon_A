@@ -62,17 +62,19 @@
 	}
 
 	& > .question-content-position {
-		@include size();
+		@include size(100%, 100%);
 		@include flex();
-		background-color: rgb(60, 64, 67);
-
+		z-index: 2;
+		
 		& > .question-content {
 			width: 100%;
 			position: absolute;
 			top: 30px;
-			height: 90%;
+			height: 92%;
+			z-index: 1;
+			background-color: rgb(60, 64, 67);
 
-			display: none;
+			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-around;

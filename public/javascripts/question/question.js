@@ -64,11 +64,10 @@ const onClickAnswer = async (target) => {
 		setStore({ currentQuestionNumber: 99 });
 		toNextQuestion({
 			num: 99,
-			question: ment,
+			question: "",
 			answer1: "장난이고, 개발 하고싶습니다.",
 			answer2: "그게뭔데.. 나갈래..",
 		});
-		nextPage(document.querySelector(".question-content"));
 		typing(document.querySelector(".question-title"), ment, document.querySelector(".question-button"));
 		return;
 	}
@@ -76,8 +75,12 @@ const onClickAnswer = async (target) => {
 	if (!result.name) {
 		setStore({ currentQuestionNumber: result.num });
 		getStore().questionHistory.push(getStore().currentQuestionNumber);
-		toNextQuestion(result);
-		nextPage(document.querySelector(".question-content"));
+		toNextQuestion({
+			num: result.num,
+			question: "",
+			answer1: result.answer1,
+			answer2: result.answer2
+		});
 		typing(document.querySelector(".question-title"), result.question, document.querySelector(".question-button"));
 
 	} else {
