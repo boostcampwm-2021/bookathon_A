@@ -2,7 +2,6 @@ import { render } from "./render-result.js";
 import { initPage } from "../start/start.js";
 import { imageSlider } from "./animation-result.js";
 import { setStore, getStore } from "../store.js";
-import { initPage } from "../start/start.js";
 
 export const renderResult = (result) => {
 	const egg = ["크롱", "호눅스", "네이버 커넥트"];
