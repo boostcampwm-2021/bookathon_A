@@ -31,7 +31,7 @@ resultDB.insert({ "name": "IoT", "image": "iot", "short": "생활의 관리자",
 
 resultDB.insert({ "name": "임베디드", "image": "embedded", "short": "기계에 생명을 불어넣는", "content" : "임베디드 시스템은 기계나 기타 제어가 필요한 시스템이나, 특정 기능을 수행하는 것입니다. 대표적으로 냉장고의 온도 조절 혹은 리모컨으로 TV를 조작할 수 있습니다. 또한, 실시간 계산을 필요로 하는 항공이나 자율주행 자동차 개발에 있어 제한을 많이 받기 때문에 높은 기술력을 필요로 합니다.", "success" : ["elevator", "car", "refrigerator"], "language":["c"] }, function(err, newDoc) {});
 
-resultDB.insert({ "name": "게임", "image": "game", "short": "한 세계의 창조자", "content" : "게임 내의 등장인물과 환경과 같은 모든 것을 구현합니다. 게임에 대한 애정은 디폴트로 가지고 있어야 하죠. 멋있고 ‘말이 되는’ 세계를 만들기 위해서는 수학적 능력도 꽤 요구된답니다! 게임을 만드는 툴을 사용해 맵, 캐릭터, 사운드 등을 모두 합치고, 개연성과 아름다움을 부연하는 모든 섬세한 설정들도 게임 개발자의 손에 이루어집니다.", "success" : ["leagueoflegends", "starcraft", "maplestory"], "language":["c++", "c#"] }, function(err, newDoc) {});
+resultDB.insert({ "name": "게임", "image": "game", "short": "한 세계의 창조자", "content" : "게임 내의 등장인물과 환경과 같은 모든 것을 구현합니다. 게임에 대한 애정은 디폴트로 가지고 있어야 하죠. 멋있고 ‘말이 되는’ 세계를 만들기 위해서는 수학적 능력도 꽤 요구된답니다! 게임을 만드는 툴을 사용해 맵, 캐릭터, 사운드 등을 모두 합치고, 개연성과 아름다움을 부연하는 모든 섬세한 설정들도 게임 개발자의 손에 이루어집니다.", "success" : ["leagueoflegends", "starcraft", "maplestory"], "language":["c++", "c-sharp"] }, function(err, newDoc) {});
 
 resultDB.insert({ "name": "네이버 커넥트", "image": "booduck", "short": "부스트캠프 운영 마스터", "content" : "부스트캠프를 위해 이 한 몸 다바침", "success" : ["", "", ""], "language":["", ""] }, function(err, newDoc) {});
 

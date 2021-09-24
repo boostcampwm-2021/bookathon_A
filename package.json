@@ -9,12 +9,12 @@
     "cookie-parser": "~1.4.4",
     "core-js": "^3.17.2",
     "debug": "~2.6.9",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "nedb": "^1.8.0",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.13",
     "pug": "^3.0.2"
   },
   "devDependencies": {

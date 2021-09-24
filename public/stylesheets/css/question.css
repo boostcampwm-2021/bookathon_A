@@ -1,6 +1,13 @@
 ::-webkit-scrollbar {
   display: none; }
 
+div {
+  user-select: none;
+  cursor: default; }
+
+img {
+  -webkit-user-drag: none; }
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +33,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background-color: #3c4043;
   width: 70vw;
   height: 70vh;
   max-width: 850px;
@@ -38,7 +46,8 @@ body {
     height: 50px;
     width: 100%;
     display: flex;
-    position: relative; }
+    position: relative;
+    margin-bottom: -20px; }
     .question-window > .header > div {
       position: absolute;
       width: 15px;
@@ -54,35 +63,45 @@ body {
     .question-window > .header > div:nth-of-type(3) {
       background-color: #27c740;
       left: 55px; }
-  .question-window > .question-content {
+  .question-window > .question-content-position {
     width: 100%;
-    position: absolute;
-    top: 30px;
-    background-color: #3c4043;
-    height: 90%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around; }
-    .question-window > .question-content > div:nth-of-type(2) {
+    flex-direction: row;
+    z-index: 2; }
+    .question-window > .question-content-position > .question-content {
       width: 100%;
+      position: absolute;
+      top: 30px;
+      height: 92%;
+      z-index: 1;
+      background-color: #3c4043;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 50%;
       justify-content: space-around; }
-    .question-window > .question-content span {
-      font-family: D2coding;
-      font-size: 30px;
-      font-weight: 400;
-      color: #57d87b; }
+      .question-window > .question-content-position > .question-content > .question-button {
+        width: 100%;
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+        justify-content: space-around; }
+      .question-window > .question-content-position > .question-content span {
+        font-family: D2coding;
+        font-size: 30px;
+        font-weight: 400;
+        color: #57d87b; }
 
 .question-title {
   font-family: D2coding;
   font-size: 26px;
   font-weight: 400;
   color: #57d87b;
-  width: 68%;
+  width: auto;
   padding-top: 30px; }
 
 .answer {
@@ -114,7 +133,8 @@ body {
   display: flex;
   justify-content: flex-start;
   border-radius: 15px;
-  background-color: #302a2f; }
+  background-color: #302a2f;
+  margin-top: -30px; }
   .pagenation > div {
     width: 30%;
     display: flex;
@@ -125,3 +145,35 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: #57d87b; }
+
+#start-title {
+  color: #57d87b; }
+
+#ascii-art {
+  color: #57d87b; }
+
+#start-button {
+  width: 400px;
+  height: 40px;
+  border: solid 1px #57d87b;
+  cursor: pointer;
+  font-family: D2coding;
+  color: #57d87b;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 15px; }
+
+.question-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c4043;
+  height: 90%;
+  z-index: 800; }
+
+.start-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }

@@ -1,6 +1,7 @@
 import { render } from "./render-question.js";
 import { renderResult } from "../result/result.js";
 import { setStore, getStore } from "../store.js";
+import { nextPage, typing } from "../animation.js";
 
 const BASE_API_URL = "http://localhost:3000/question";
 
@@ -58,23 +59,35 @@ const onClickAnswer = async (target) => {
 	const [result] = await fetchQuestion(getStore().currentQuestionNumber, picked);
 
 	if (getStore().currentQuestionNumber === 0 && picked == 1) {
+		const ment = "갈때 가더라도 Hello World 한줄은 괜찮잖아?";
+
 		setStore({ currentQuestionNumber: 99 });
 		toNextQuestion({
 			num: 99,
-			question: "갈때 가더라도 Hello World 한줄은 괜찮잖아?",
+			question: "",
 			answer1: "장난이고, 개발 하고싶습니다.",
 			answer2: "그게뭔데.. 나갈래..",
 		});
+		typing(document.querySelector(".question-title"), ment, document.querySelector(".question-button"));
 		return;
 	}
 
 	if (!result.name) {
 		setStore({ currentQuestionNumber: result.num });
 		getStore().questionHistory.push(getStore().currentQuestionNumber);
-		toNextQuestion(result);
+		toNextQuestion({
+			num: result.num,
+			question: "",
+			answer1: result.answer1,
+			answer2: result.answer2
+		});
+		typing(document.querySelector(".question-title"), result.question, document.querySelector(".question-button"));
+
 	} else {
 		renderResult(result);
+		nextPage(document.querySelector(".result"));
 	}
+
 };
 
 // const onClickPrevious = (target) => {
