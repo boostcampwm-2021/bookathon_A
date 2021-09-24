@@ -177,3 +177,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+
+strong {
+  font-family: D2coding;
+  font-size: 20px;
+  font-weight: 400;
+  color: #57d87b;
+  position: absolute;
+  top: -50px; }
