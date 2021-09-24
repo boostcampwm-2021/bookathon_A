@@ -24,6 +24,5 @@ const template = ({ num, question, answer1, answer2, image }) => `
 
 export const render = ({ num, question, answer1, answer2 }) => {
 	$target().innerHTML = "";
-	console.log(num);
 	$target().insertAdjacentHTML("beforeend", template({ num, question, answer1, answer2 }));
 };

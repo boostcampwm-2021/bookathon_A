@@ -13,14 +13,4 @@ export const renderResult = (result) => {
 		imageSlider(document.querySelector(".result-success .result-list"));
 		imageSlider(document.querySelector(".result-language .result-list"));
 	}
-
-	addEvents();
-};
-
-const onClickRetry = (e) => {
-	initPage();
-};
-
-const addEvents = () => {
-	document.querySelector("#app > header").addEventListener("click", onClickRetry);
 };

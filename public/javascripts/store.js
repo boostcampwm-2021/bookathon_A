@@ -9,3 +9,11 @@ export const setStore = (obj) => {
 };
 
 export const getStore = () => store;
+
+export const initialize = () => {
+	store = {
+		currentPage: "main",
+		currentQuestionNumber: 0,
+		questionHistory: [0],
+	};
+};
