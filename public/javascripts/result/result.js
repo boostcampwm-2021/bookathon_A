@@ -1,5 +1,6 @@
 import { render } from "./render-result.js";
-import { imageSlider } from "../animation.js";
+import { initPage } from "../start/start.js";
+import { imageSlider } from "./animation-result.js";
 import { setStore, getStore } from "../store.js";
 import { initPage } from "../start/start.js";
 
