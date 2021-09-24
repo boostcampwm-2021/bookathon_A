@@ -126,9 +126,9 @@ body {
     font-weight: 400;
     color: #57d87b; }
 
-    #start-button{
-      width:100%;
-      height:40px;
-      border: solid 1px #57d87b;
-      cursor: pointer;
-    }
+  #start-button{
+    width:100%;
+    height:40px;
+    border: solid 1px #57d87b;
+    cursor: pointer;
+  }
