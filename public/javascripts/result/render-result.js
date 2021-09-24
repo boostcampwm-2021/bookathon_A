@@ -8,7 +8,7 @@ const template = (result, isEgg) =>
             </div>
             <section class="result">
                 <div>
-                    <div class="result-name">저는 ${result.name} 개발자 입니다.</div>
+                    <div class="result-name">저는 ${result.name} ${isEgg ? "" : "개발자"} 입니다.</div>
                     <div class="result-image">
                         <img width="300px" src="../../src/image/thumbnail/${result.image}.png" />
                     </div>
