@@ -50,5 +50,39 @@ export const imageSlider = (target) => {
 export const nextPage = (target) => {
     setTimeout(() => {
         target.style.display = "flex";
-    }, 500);
+    }, 300);
+}
+
+export const typing = (target, string, otherTarget) => {
+    const underbar = "_";
+    let innerText = "";
+    let idx = 0;
+
+    const doTyping = setInterval(() => {
+        if(innerText === string) {
+            clearInterval(doTyping);
+
+            let look = true;
+
+            setInterval(() => {
+                if(look) {
+                    target.innerHTML = "$ " + innerText + underbar;
+                    look = false;
+                } else {
+                    target.innerHTML = "$ " + innerText + "&nbsp";
+                    look = true;
+                }
+            }, 500);
+
+            setTimeout(() => {
+                otherTarget.style.visibility = "visible";
+            }, 1000);
+
+            return;
+        }
+
+        innerText += string[idx];
+        idx++;
+        target.innerText = "$ " + innerText + underbar;
+    }, 100);
 }

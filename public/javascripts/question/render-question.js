@@ -10,7 +10,7 @@ const template = ({ num, question, answer1, answer2, image }) => `
                 <div class="question-content">
                     <div class="question-title">$ ${question}</div>
                     ${num == 17 ? `<img src="../src/image/17.jpg" />` : ""}
-                    <div>
+                    <div class="question-button">
                         <div class="answer" data-answer="1">${answer1}</div>
                         <span>vs</span>
                         <div class="answer ${num === 99 ? "answer-easter" : ""}" data-answer="2">${answer2}</div>

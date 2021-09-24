@@ -78,9 +78,10 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-around; }
-      .question-window > .question-content-position > .question-content > div:nth-of-type(2) {
+      .question-window > .question-content-position > .question-content > .question-button {
         width: 100%;
         display: flex;
+        visibility: hidden;
         flex-direction: column;
         align-items: center;
         height: 40%;
@@ -96,7 +97,7 @@ body {
   font-size: 26px;
   font-weight: 400;
   color: #57d87b;
-  width: 68%;
+  width: auto;
   padding-top: 30px; }
 
 .answer {
@@ -139,3 +140,23 @@ body {
     font-size: 20px;
     font-weight: 400;
     color: #57d87b; }
+  
+
+  #start-title{
+    color:#57d87b; 
+  }
+
+  #ascii-art{
+    color:#57d87b; 
+  }
+  #start-button{
+    width:400px;
+    height:40px;
+    border: solid 1px #57d87b;
+    cursor: pointer;
+    font-family: D2coding;
+    color:#57d87b; 
+    text-align: left;
+    padding-left:10px;
+    padding-bottom: 15px;
+  }
