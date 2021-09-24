@@ -3,7 +3,7 @@ import { renderResult } from "../result/result.js";
 import { setStore, getStore } from "../store.js";
 import { nextPage, typing } from "../animation.js";
 
-const BASE_API_URL = "http://localhost:3000/question";
+const BASE_API_URL = "/question";
 
 // doms
 const $target = () => document.querySelector("#app");
